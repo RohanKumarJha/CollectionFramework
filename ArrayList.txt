@@ -1,0 +1,53 @@
+
+                        // LIST
+                        
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    ArrayList<String> names = new ArrayList<> ();
+	    
+	   // add element
+	    names.add("Rohan");
+	    names.add("Rishabh");
+	    names.add("Mom");
+	    names.add("Daddy");
+	    System.out.println(names);
+	    
+	   // get element
+	    System.out.println(names.get(2));
+	    System.out.println(names.get(0));
+	    
+	   // add element specific index
+	   names.add(1, "Brother");
+	   System.out.println(names);
+	   
+	   //replace last element
+	   names.set(1, "Sister");
+	   System.out.println(names);
+	   
+	   //delete
+	   names.remove(1);
+	   System.out.println(names);
+	   
+	   //delete by element name
+	   names.remove(String.valueOf("Mom"));
+	   System.out.println(names);
+	   
+	   //Loop on list 
+	   for(int i=0; i<names.size(); i++) {
+	       System.out.println(names.get(i));
+	   }
+	   
+	   //Loop on list using for each
+	   for(String str : names) {
+	       System.out.println(str);
+	   }
+	   
+	   //Sort the array
+	   Collections.sort(names);
+	   System.out.println(names);
+	    
+	}
+}
