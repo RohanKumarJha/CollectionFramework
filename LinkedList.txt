@@ -1,0 +1,53 @@
+
+                        // LinkedLIST
+                        
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    List<Integer> values = new LinkedList<> ();
+	    
+	   // add the elements
+	   values.add(12);
+	   values.add(8);
+	   values.add(22);
+	   values.add(9);
+	   System.out.println(values);
+	   
+	   //get the elements
+	   System.out.println(values.get(3));
+	   System.out.println(values.get(0));
+	   
+	   //add elements at specific position
+	   values.add(0,2);
+	   System.out.println(values);
+	   
+	   //set element
+	   values.set(0,100);
+	   System.out.println(values);
+	   
+	   //delete elements
+	   values.remove(0);
+	   System.out.println(values);
+	   
+	   //delete element by value
+	   values.remove(Integer.valueOf(22));
+	   System.out.println(values);
+	   
+	   //loop on list
+	   for(int i=0; i<values.size(); i++) {
+	       System.out.println(values.get(i));
+	   }
+	   
+	   //loop for-each
+	   for(int num : values) {
+	       System.out.println(num);
+	   }
+	   
+	   //sort the array
+	   Collections.sort(values);
+	   System.out.println(values);
+	    
+	}
+}
