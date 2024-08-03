@@ -1,5 +1,5 @@
 
-                        // LIST
+                        // ArrayLIST
                         
 import java.util.*;
 
