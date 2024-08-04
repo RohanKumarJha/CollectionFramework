@@ -1,0 +1,34 @@
+
+                            // HASHSET
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Set<String> names = new HashSet<> ();
+	    
+	   // Add element
+	    names.add("Rohan");
+	    names.add("Rishabh");
+	    names.add("Mom");
+	    names.add("Rohan");
+	    names.add("Dad");
+	    names.add("");
+	    System.out.println(names);
+	    
+	   // Loop(1st method)
+	   Iterator<String> str = names.iterator();
+	   while(str.hasNext()) {
+	       System.out.println(str.next());
+	   }
+	   
+	   //Loop(2nd method)
+	   for(String newStr : names) {
+	       System.out.println(newStr);
+	   }
+	   
+	   //Loop(3rd method)
+	   names.forEach(System.out::println);
+	   
+	}
+}
