@@ -1,0 +1,33 @@
+
+                            // TREESET
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    TreeSet<String> str = new TreeSet<> ();
+	    
+	   // Add element
+	    str.add("");
+	    str.add("Rohan");
+	    str.add("Rishabh");
+	    str.add("Mom");
+	    str.add("Daddy");
+	    System.out.println(str);
+	    
+	   // Loop(1st method)
+	   for(String newStr : str) {
+	       System.out.println(newStr);
+	   }
+	   
+	   //Loop(2nd method)
+	   Iterator<String> itr = str.iterator();
+	   while(itr.hasNext()) {
+	       System.out.println(itr.next());
+	   }
+	   
+	   //Loop(3rd method)
+	   str.forEach(System.out::println);
+	   
+	}
+}
