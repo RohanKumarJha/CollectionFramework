@@ -1,0 +1,26 @@
+
+                            // HashMap
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    HashMap<String, Integer> courses = new HashMap<> ();
+	    
+	   // Add key, value
+	    courses.put("Spring", 8000);
+	    courses.put("Cpp", 3000);
+	    courses.put("Python", 3500);
+	    courses.put("Java Course", 4000);
+	    System.out.println(courses);
+	    
+	   // Get element
+	   System.out.println(courses.get("Spring"));
+	    
+	   // Traverse array
+	   courses.forEach((key,value) -> {
+	       System.out.println(key+" "+value);
+	   });
+	   
+	}
+}
